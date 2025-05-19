@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydantic_practice"
+version = "0.1.0"
+description = "Pydantic testing and experimentation."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "rsikarin", email = "your.email@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.11.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pre-commit",
+    "black",
+    "flake8",
+    "isort"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

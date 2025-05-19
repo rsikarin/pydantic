@@ -1,2 +1,2 @@
-# pydantic
+# pydantic_practice
 Pydantic Practice
